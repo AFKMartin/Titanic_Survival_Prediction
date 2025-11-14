@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 
 # Paths
 BASE_DIR = os.path.dirname(__file__)
-MODEL_PATH = os.path.join(BASE_DIR, "titanic_xgb_92_17.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "titanic_xgb_92_18.pkl") # adjust if needed
 DATA_PATH = os.path.join(BASE_DIR, "../data/processed_titanic.csv")  # adjust if needed
 
 # Load the model
@@ -43,5 +43,3 @@ print("\nSingle sample prediction:")
 print("Prediction:", "Survived" if pred == 1 else "Not Survived")
 if proba is not None:
     print(f"Survival probability: {proba*100:.2f}%")
-
-# TODO this alredy all done, use the pkl to develop the backend 
